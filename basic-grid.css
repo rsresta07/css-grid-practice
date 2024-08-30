@@ -1,0 +1,11 @@
+/* Style for a basic grid layout */
+.basic-grid {
+    display: grid; /* Use CSS Grid layout */
+    gap: 1rem; /* Space between grid items */
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(240px, 1fr)
+    ); /* Create responsive columns:
+       - auto-fill: Automatically fit as many columns as possible 
+       - minmax(240px, 1fr): Each column will be at least 240px wide but can grow to fill available space */
+}

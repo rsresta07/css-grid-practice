@@ -1,0 +1,36 @@
+/* Style for the body element */
+body {
+    background: rgb(19, 19, 19); /* Dark background color */
+    color: #fff; /* White text color for contrast */
+    font-family: "Courier New", Courier, monospace; /* Monospace font for a typewriter look */
+}
+
+/* Style for the card element */
+.card {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background: #353535; /* Dark background color for the card */
+    font-size: 3rem; /* Large font size for the text */
+    color: #fff; /* White text color */
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem,
+        /* Subtle shadow for depth */ rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; /* Secondary shadow for more depth */
+    height: 100%; /* Full height of the container */
+    width: 100%; /* Full width of the container */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: all 500ms; /* Smooth transition for all changes */
+    overflow: hidden; /* Hide overflow to keep corners rounded */
+
+    background-size: cover; /* Ensure background image covers the entire card */
+    background-position: center; /* Center background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+/* Style for the card element when hovered */
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+        /* Larger shadow for hover effect */ rgba(2, 8, 20, 0.08) 0px 0.175em
+            0.5em; /* Secondary shadow for hover effect */
+    transform: translateY(-3px) scale(1.1); /* Slightly move up and scale card on hover */
+}
