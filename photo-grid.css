@@ -1,0 +1,25 @@
+/* Style for a responsive photo grid layout */
+.photo-grid {
+    display: grid; /* Use CSS Grid layout */
+    gap: 1rem; /* Space between grid items */
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    ); /* Create flexible columns:
+       - auto-fit: Automatically fit columns into the grid
+       - minmax(240px, 1fr): Columns are at least 240px wide, but can expand to fill the available space */
+
+    grid-auto-rows: 240px; /* Set a default row height of 240px */
+}
+
+/* Media query for screens 600px wide and up */
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto; /* Make this item span 2 rows, useful for taller items */
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto; /* Make this item span 2 columns, useful for wider items */
+    }
+}
